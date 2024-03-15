@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="abbos">
+        <h1>Get in touch</h1>
+        <form action="" class="form">
+          <div class="bir">
+            <input type="text" class="form__input-name" placeholder="name" />
+            <input type="email" class="form__input-email" placeholder="email" />
+          </div>
+          <div class="bir">
+            <input type="number" class="form__input-age" placeholder="age" />
+            <input type="text" class="form__input-std" placeholder="study" />
+          </div>
+          <div class="com">
+            <section id="app">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="comment">
+                      <p v-for="items in item" v-text="items"></p>
+                    </div>
+                    <!--End Comment-->
+                  </div>
+                  <!--End col -->
+                </div>
+                <!-- End row -->
+                <div class="row">
+                  <div class="col-6">
+                    <textarea
+                      type="text"
+                      class="input"
+                      placeholder="Write a comment"
+                      v-model="newItem"
+                      @keyup.enter="addItem()"
+                    ></textarea>
+                  </div>
+                  <!-- End col -->
+                </div>
+                <!--End Row -->
+              </div>
+              <!--End Container -->
+            </section>
+            <!-- end App -->
+          </div>
+          <button class="btn0">Submit</button>
+        </form>
+      </div>
+      <table class="table">
+        <thead>
+          <div class="cards">
+            <div class="card"></div>
+          </div>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
